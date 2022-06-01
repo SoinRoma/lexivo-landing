@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Regular.woff2") format('woff2');
+}
+
+body{
+    font-family: 'Gilroy', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.btn{
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 90px;
+    padding: 15px 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.active-btn{
+    border-radius: 90px;
+    padding: 15px 35px;
+    color: white;
+    cursor: pointer;
+    background: #F37D57;
+    border: 1px solid #F37D57;
+}
+
+/*----------------HEADER----------------*/
+
+.header{
+    padding-top: 30px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    max-width: 100px;
+    width: 100%;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    color: white;
+}
+
+.nav-item{
+    margin-right: 15px;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+/*---------------MAIN----------------------*/
+
+.main{
+    height: 100vh;
+    background: url("../images/bg/BG.png") #004462;
+}
+
+.main-title{
+    margin-top: 85px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 72px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main-subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main-buttons{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main-buttons .active-btn{
+    margin-right: 20px;
+}
+
