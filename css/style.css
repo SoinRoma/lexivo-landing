@@ -352,12 +352,14 @@ body{
 .demo{
     background: url("../images/bg/demo-bg.png") no-repeat;
     background-size: cover;
+    min-height: 475px;
 }
 
 .demo-block{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 155px 0 150px;
 }
 
 .demo-title{
@@ -366,7 +368,6 @@ body{
     font-size: 62px;
     line-height: 72px;
     color: #FFFFFF;
-    padding: 90px 0 120px;
 }
 
 .demo-buttons{
@@ -377,3 +378,51 @@ body{
     margin-right: 20px;
 }
 
+
+/*---------------FOOTER-------------------*/
+
+.footer{
+    background-color: #004462;
+}
+
+.footer-up{
+    padding: 45px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-socials{
+    display: flex;
+}
+
+.footer-social{
+    margin-right: 15px;
+}
+
+.footer-social:last-child{
+    margin-right: 0;
+}
+
+.footer-middle{
+    border-bottom: 2px solid white;
+}
+
+.footer-down{
+    padding: 45px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-privacy{
+    color: white;
+}
+
+.powered {
+    color: white;
+}
+
+.altek {
+    margin-left: 10px;
+}
