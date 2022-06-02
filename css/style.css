@@ -20,14 +20,14 @@ body{
     background: transparent;
     border: 1px solid white;
     border-radius: 90px;
-    padding: 15px 35px;
+    padding: 20px 35px;
     color: white;
     cursor: pointer;
 }
 
 .active-btn{
     border-radius: 90px;
-    padding: 15px 35px;
+    padding: 20px 35px;
     color: white;
     cursor: pointer;
     background: #F37D57;
@@ -70,7 +70,7 @@ body{
 
 .main{
     height: 100vh;
-    background: url("../images/bg/BG.png") #004462;
+    background: url("../images/bg/main-bg.png") #004462;
 }
 
 .main-title{
@@ -345,5 +345,35 @@ body{
     border: 1px solid #F37D57;
     width: 100%;
     font-size: 18px;
+}
+
+/*----------------DEMO------------*/
+
+.demo{
+    background: url("../images/bg/demo-bg.png") no-repeat;
+    background-size: cover;
+}
+
+.demo-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.demo-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 72px;
+    color: #FFFFFF;
+    padding: 90px 0 120px;
+}
+
+.demo-buttons{
+    display: flex;
+}
+
+.demo-buttons .active-btn{
+    margin-right: 20px;
 }
 
