@@ -23,9 +23,11 @@ body{
     padding: 20px 35px;
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .active-btn{
+    text-decoration: none;
     border-radius: 90px;
     padding: 20px 35px;
     color: white;
@@ -157,7 +159,7 @@ body{
 
 .btn-slider.customPrevBtnSlider{
     transform: rotate(180deg);
-    margin-top: -2px;
+    margin-top: -5px;
 }
 
 
