@@ -53,6 +53,7 @@
 
     .main-left {
         width: 93%;
+        margin-right: 0;
     }
 
     .review-title {
@@ -84,52 +85,52 @@
 
 @media (max-width: 768px) {
 
-    .slider-header{
+    .slider-header {
         justify-content: center;
     }
 
-    .slider-buttons, .container-slider{
+    .slider-buttons, .container-slider {
         display: none;
     }
 
-    .container-slider-mobile{
+    .container-slider-mobile {
         margin: auto;
         overflow: hidden;
         max-width: 1200px;
         width: 100%;
     }
 
-    .slider-mobile-block{
+    .slider-mobile-block {
         padding: 0 20px;
         margin-bottom: 30px;
         text-align: center;
     }
 
-    .slider-mobile-block img{
+    .slider-mobile-block img {
         width: 75%;
     }
 
-    .reviews-block{
+    .reviews-block {
         display: block;
     }
 
-    .owl-carousel-review{
+    .owl-carousel-review {
         margin: auto;
     }
 
-    .customPrevBtnReview, .customNextBtnReview{
+    .customPrevBtnReview, .customNextBtnReview {
         display: none;
     }
 
-    .contacts-block{
+    .contacts-block {
         text-align: center;
     }
 
-    .contact-block{
+    .contact-block {
         display: block;
     }
 
-    #form{
+    #form {
         max-width: 100%;
     }
 
@@ -138,7 +139,7 @@
         max-width: 90%;
     }
 
-    .form-button{
+    .form-button {
         justify-content: center;
     }
 
@@ -147,7 +148,7 @@
         margin-top: 41px;
     }
 
-    .demo-block{
+    .demo-block {
         display: block;
         padding: 35px 20px 35px;
         text-align: center;
@@ -157,7 +158,7 @@
         justify-content: center;
     }
 
-    .footer-up{
+    .footer-up {
         display: block;
         text-align: center;
     }
@@ -179,7 +180,7 @@
         justify-content: center;
     }
 
-    .footer-down{
+    .footer-down {
         display: block;
         text-align: center;
     }
@@ -194,19 +195,122 @@
 
 
 @media (max-width: 630px) {
-    .active-btn{
+    .active-btn {
         display: block;
         width: 260px;
         margin: 0 auto 30px auto !important;
     }
 
-    .btn{
+    .btn {
         display: block;
         width: 260px;
         margin: 0 auto 30px auto !important;
     }
 
-    .demo-buttons{
+    .demo-buttons {
         display: block;
+    }
+}
+
+
+@media (max-width: 565px) {
+    .header .nav-list {
+        display: none;
+    }
+
+    .btn-header {
+        display: none;
+    }
+
+    .main-block {
+        padding: 0 20px;
+    }
+
+    .nav-menu {
+        margin-top: 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #004462;
+        z-index: 9;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav-menu .nav-list{
+        display: block;
+    }
+
+    .nav-menu .nav-item {
+        font-size: 24px;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .nav-menu .footer-socials {
+        margin-top: 30px;
+    }
+
+    .menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        color: white;
+    }
+
+    .menu-close {
+        opacity: 0;
+        position: fixed;
+        right: 7%;
+        top: 5.5%;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transform: translateX(300%);
+        transition: transform 0.2s;
+        transition-delay: 0.4s;
+    }
+
+    .is-active {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-images {
+        bottom: -69px;
+    }
+
+    .demo-title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .owl-carousel-review {
+        width: 90%;
+    }
+
+    .review-title {
+        font-size: 20px;
+    }
+
+    .review-subtitle {
+        font-size: 16px;
     }
 }

@@ -95,6 +95,10 @@ body{
     text-decoration: none;
 }
 
+.menu-button, .menu-close, .nav-menu {
+    display: none;
+}
+
 /*---------------MAIN----------------------*/
 
 .main{
@@ -494,6 +498,12 @@ body{
 
 .powered {
     color: white;
+}
+
+.powered-burger {
+    color: white;
+    position: absolute;
+    bottom: 10px;
 }
 
 .altek {
