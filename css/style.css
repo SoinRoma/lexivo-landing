@@ -102,3 +102,133 @@ body{
     margin-right: 20px;
 }
 
+.main-images{
+    display: flex;
+    position: absolute;
+    bottom: -16%;
+    right: 0;
+    left: 0;
+}
+
+.main-left{
+    margin-right: 20px;
+}
+
+
+
+/*---------------SLIDER----------------------*/
+
+.slider{
+    margin-top: 18%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.slider-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #004462;
+}
+
+.slider-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-slider{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.customPrevBtn{
+    margin-right: 10px;
+}
+
+.btn-slider.customPrevBtnSlider{
+    transform: rotate(180deg);
+    margin-top: -2px;
+}
+
+
+.container-slider{
+    margin: auto;
+    overflow: hidden;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+/*--------------REVIEWS---------------*/
+
+.reviews-block{
+    margin: 120px auto 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-slider.customPrevBtnReview{
+    transform: rotate(180deg);
+    margin-top: -2px;
+}
+
+.owl-carousel-review{
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.review-img{
+    margin: auto;
+    width: 120px !important;
+
+}
+
+.review-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    color: #004462;
+}
+
+
+.review-subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #004462;
+}
+
+.owl-dot.active{
+    height: 15px !important;
+    width: 15px !important;
+    background: #004462 !important;
+    border-radius: 50% !important;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.owl-dot{
+    cursor: pointer;
+    height: 15px !important;
+    width: 15px !important;
+    background: #BFCFD6 !important;
+    border-radius: 50% !important;
+    margin-right: 15px;
+}
+

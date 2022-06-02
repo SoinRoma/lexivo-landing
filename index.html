@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LEXIVO-NET</title>
+    <link rel="stylesheet" href="js/carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="css/response.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -43,11 +44,98 @@
             </button>
         </div>
     </div>
+    <div class="container main-images">
+        <img src="images/img/desktop/main-left.png" class="main-left" alt="main-left">
+        <img src="images/img/desktop/main-right.png" class="main-right" alt="main-right">
+    </div>
 </section>
 
-<section class="slider"></section>
+<section class="slider">
+    <div class="carousel">
+        <div class="container  slider-header">
+            <h2 class="slider-title">See how it works</h2>
+            <div class="slider-buttons">
+                <button class="btn-slider customPrevBtnSlider"><img src="images/icons/Right.svg" alt="Right"></button>
+                <button class="btn-slider customNextBtnSlider"><img src="images/icons/Right.svg" alt="Right"></button>
+            </div>
+        </div>
+        <div class="container-slider">
+            <div class="owl-carousel owl-carousel-slider">
+                <div class="slide">
+                    <img src="images/slider/desktop/1.png" alt="1">
+                </div>
+                <div class="slide">
+                    <img src="images/slider/desktop/2.png" alt="2">
+                </div>
+                <div class="slide">
+                    <img src="images/slider/desktop/3.png" alt="3">
+                </div>
+                <div class="slide">
+                    <img src="images/slider/desktop/4.png" alt="4">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<section class="reviews"></section>
+<section class="reviews">
+    <div class="container reviews-block">
+        <button class="btn-slider customPrevBtnReview"><img src="images/icons/Right.svg" alt="Right"></button>
+        <div class="owl-carousel-review owl-carousel owl-theme">
+            <div class="slide">
+                <img src="images/logos/alliance.png" alt="alliance" class="review-img">
+                <h3 class="review-title">
+                    "Getting our scattered phone systems steamlined and centralized was like
+                    srtaightening out a giant ball of string"
+                </h3>
+                <p class="review-subtitle">
+                    Kate Shagliy, HR Manager
+                </p>
+            </div>
+            <div class="slide">
+                <img src="images/logos/ls.png" alt="ls" class="review-img">
+                <h3 class="review-title">
+                    "Not only is Lexivo more efficient, it's also more cost-effective. You'll save money on your monthly
+                    phone bill and you won't need to hire extra staff to manage multiple phone. This app helped us a
+                    lot"
+                </h3>
+                <p class="review-subtitle">
+                    Aaron Smith, Manager
+                </p>
+            </div>
+            <div class="slide">
+                <img src="images/logos/cnu.png" alt="cnu" class="review-img">
+                <h3 class="review-title">
+                    "If you're looking for a reliable, scalable business communication solution, Lexivo is the perfect
+                    choice"
+                </h3>
+                <p class="review-subtitle">
+                    Shawn Payne, Dispatcher
+                </p>
+            </div>
+            <div class="slide">
+                <img src="images/logos/ursa.png" alt="ursa" class="review-img">
+                <h3 class="review-title">
+                    "In a rapidly changing world, it's more important than ever to have a platform that can power
+                    connections today and transform business tomorrow"
+                </h3>
+                <p class="review-subtitle">
+                    Justin Dun, Dispatcher
+                </p>
+            </div>
+            <div class="slide">
+                <img src="images/logos/penn.png" alt="penn" class="review-img">
+                <h3 class="review-title">
+                    "We are thrilled to have the opportunity of collaborating with ALTEK and their awesome LEXIVO app!"
+                </h3>
+                <p class="review-subtitle">
+                    Alex Fry, Manager
+                </p>
+            </div>
+        </div>
+        <button class="btn-slider customNextBtnReview"><img src="images/icons/Right.svg" alt="Right"></button>
+    </div>
+</section>
 
 <section class="contact"></section>
 
@@ -55,6 +143,9 @@
 
 <footer class="footer"></footer>
 
+<script src="js/jquery.js"></script>
+<script src="js/carousel/owl.carousel.min.js"></script>
+<script src="js/carousel/main.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
