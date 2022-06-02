@@ -26,6 +26,16 @@ body{
     text-decoration: none;
 }
 
+.btn:hover{
+    background-color: white;
+    color: #004462;
+    transition: background-color 1s;
+}
+
+.btn:hover path{
+    fill: #004462;
+}
+
 .active-btn{
     text-decoration: none;
     border-radius: 90px;
@@ -34,6 +44,12 @@ body{
     cursor: pointer;
     background: #F37D57;
     border: 1px solid #F37D57;
+}
+
+.active-btn:hover{
+    background-color: #CB6849;
+    border: 1px solid #CB6849;
+    transition: background-color 1s;
 }
 
 /*----------------HEADER----------------*/
@@ -349,6 +365,12 @@ body{
     font-size: 18px;
 }
 
+.form-btn:hover{
+    background-color: #CB6849;
+    border: 1px solid #CB6849;
+    transition: background-color 1s;
+}
+
 /*----------------DEMO------------*/
 
 .demo{
@@ -404,6 +426,42 @@ body{
 
 .footer-social:last-child{
     margin-right: 0;
+}
+
+.fb{
+    background-image: url("../images/icons/Facebook.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 41px;
+}
+
+.fb:hover{
+    background-image: url("../images/icons/Facebook-hover.svg");
+    transition: background 0.9s ease;
+}
+
+.tw{
+    background-image: url("../images/icons/Twitter.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 41px;
+}
+
+.tw:hover{
+    background-image: url("../images/icons/Twitter-hover.svg");
+    transition: background 0.9s ease;
+}
+
+.insta{
+    background-image: url("../images/icons/IG.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 41px;
+}
+
+.insta:hover{
+    background-image: url("../images/icons/IG-hover.svg");
+    transition: background 0.9s ease;
 }
 
 .footer-middle{
