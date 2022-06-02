@@ -3,20 +3,20 @@
     src: url("../fonts/Gilroy-Regular.woff2") format('woff2');
 }
 
-body{
+body {
     font-family: 'Gilroy', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     max-width: 1200px;
     width: 100%;
     margin: auto;
 }
 
-.btn{
+.btn {
     background: transparent;
     border: 1px solid white;
     border-radius: 90px;
@@ -26,7 +26,7 @@ body{
     text-decoration: none;
 }
 
-.btn-header{
+.btn-header {
     background: transparent;
     border: 1px solid white;
     border-radius: 90px;
@@ -36,17 +36,17 @@ body{
     text-decoration: none;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: white;
     color: #004462;
     transition: background-color 1s;
 }
 
-.btn:hover path{
+.btn:hover path {
     fill: #004462;
 }
 
-.active-btn{
+.active-btn {
     text-decoration: none;
     border-radius: 90px;
     padding: 20px 35px;
@@ -56,7 +56,7 @@ body{
     border: 1px solid #F37D57;
 }
 
-.active-btn:hover{
+.active-btn:hover {
     background-color: #CB6849;
     border: 1px solid #CB6849;
     transition: background-color 1s;
@@ -64,33 +64,33 @@ body{
 
 /*----------------HEADER----------------*/
 
-.header{
+.header {
     padding-top: 30px;
 }
 
-.nav{
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     max-width: 100px;
     width: 100%;
 }
 
-.nav-list{
+.nav-list {
     list-style: none;
     display: flex;
     color: white;
     padding: 0;
 }
 
-.nav-item{
+.nav-item {
     margin-right: 15px;
 }
 
-.nav-link{
+.nav-link {
     color: white;
     text-decoration: none;
 }
@@ -101,12 +101,12 @@ body{
 
 /*---------------MAIN----------------------*/
 
-.main{
+.main {
     height: 100vh;
     background: url("../images/bg/main-bg.png") #004462;
 }
 
-.main-title{
+.main-title {
     margin-top: 85px;
     font-style: normal;
     font-weight: 700;
@@ -117,7 +117,7 @@ body{
     color: #FFFFFF;
 }
 
-.main-subtitle{
+.main-subtitle {
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -126,16 +126,16 @@ body{
     color: #FFFFFF;
 }
 
-.main-buttons{
+.main-buttons {
     text-align: center;
     margin-top: 40px;
 }
 
-.main-buttons .active-btn{
+.main-buttons .active-btn {
     margin-right: 20px;
 }
 
-.main-images{
+.main-images {
     display: flex;
     position: absolute;
     bottom: -16%;
@@ -143,27 +143,26 @@ body{
     left: 0;
 }
 
-.main-left{
+.main-left {
     margin-right: 20px;
 }
 
 
-
 /*---------------SLIDER----------------------*/
 
-.slider{
+.slider {
     margin-top: 18%;
     padding-bottom: 5%;
     border-bottom: 1px solid #E8E8E8;
 }
 
-.slider-header{
+.slider-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.slider-title{
+.slider-title {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -172,64 +171,68 @@ body{
     color: #004462;
 }
 
-.slider-buttons{
+.slider-buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.btn-slider{
+.btn-slider {
     background: transparent;
     border: none;
     cursor: pointer;
 }
 
-.customPrevBtn{
+.customPrevBtn {
     margin-right: 10px;
 }
 
-.btn-slider.customPrevBtnSlider{
+.btn-slider.customPrevBtnSlider {
     transform: rotate(180deg);
     margin-top: -5px;
 }
 
 
-.container-slider{
+.container-slider {
     margin: auto;
     overflow: hidden;
     max-width: 1200px;
     width: 100%;
 }
 
+.container-slider-mobile {
+    display: none;
+}
+
 
 /*--------------REVIEWS---------------*/
 
-.reviews-block{
+.reviews-block {
     margin: 120px auto 95px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.btn-slider.customPrevBtnReview{
+.btn-slider.customPrevBtnReview {
     transform: rotate(180deg);
     margin-top: -2px;
 }
 
-.owl-carousel-review{
+.owl-carousel-review {
     max-width: 800px;
     width: 100%;
     text-align: center;
 }
 
 
-.review-img{
+.review-img {
     margin: auto;
     width: 120px !important;
 
 }
 
-.review-title{
+.review-title {
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -239,7 +242,7 @@ body{
 }
 
 
-.review-subtitle{
+.review-subtitle {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -247,7 +250,7 @@ body{
     color: #004462;
 }
 
-.owl-dot.active{
+.owl-dot.active {
     height: 15px !important;
     width: 15px !important;
     background: #004462 !important;
@@ -256,7 +259,7 @@ body{
     cursor: pointer;
 }
 
-.owl-dot{
+.owl-dot {
     cursor: pointer;
     height: 15px !important;
     width: 15px !important;
@@ -268,11 +271,11 @@ body{
 
 /*----------------CONTACT------------*/
 
-.contact{
+.contact {
     background-color: #FCFCFA;
 }
 
-.contact-title{
+.contact-title {
     padding-top: 130px;
     font-style: normal;
     font-weight: 700;
@@ -283,7 +286,7 @@ body{
     margin: 0;
 }
 
-.contact-subtitle{
+.contact-subtitle {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -291,23 +294,23 @@ body{
     color: #004462;
 }
 
-.contact-block{
+.contact-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 140px;
 }
 
-#form{
+#form {
     max-width: 387px;
 }
 
-.gif{
+.gif {
     width: 58%;
     max-width: 732px;
 }
 
-.input-form{
+.input-form {
     height: 67px;
     width: 387px;
     background: #EDF6F9;
@@ -319,7 +322,7 @@ body{
     padding-left: 10px;
 }
 
-.form-button{
+.form-button {
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -356,18 +359,19 @@ body{
     transform: scale(1);
 }
 
-.privacy{
+.privacy {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     color: #658E9F;
 }
-.privacy a{
+
+.privacy a {
     color: #233e49;
 }
 
-.form-btn{
+.form-btn {
     border-radius: 90px;
     padding: 25px 35px;
     color: white;
@@ -378,7 +382,7 @@ body{
     font-size: 18px;
 }
 
-.form-btn:hover{
+.form-btn:hover {
     background-color: #CB6849;
     border: 1px solid #CB6849;
     transition: background-color 1s;
@@ -386,20 +390,20 @@ body{
 
 /*----------------DEMO------------*/
 
-.demo{
+.demo {
     background: url("../images/bg/demo-bg.png") no-repeat;
     background-size: cover;
     min-height: 475px;
 }
 
-.demo-block{
+.demo-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 155px 0 150px;
 }
 
-.demo-title{
+.demo-title {
     font-style: normal;
     font-weight: 600;
     font-size: 62px;
@@ -407,92 +411,92 @@ body{
     color: #FFFFFF;
 }
 
-.demo-buttons{
+.demo-buttons {
     display: flex;
 }
 
-.demo-buttons .active-btn{
+.demo-buttons .active-btn {
     margin-right: 20px;
 }
 
 
 /*---------------FOOTER-------------------*/
 
-.footer{
+.footer {
     background-color: #004462;
 }
 
-.footer-up{
+.footer-up {
     padding: 45px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer-socials{
+.footer-socials {
     display: flex;
 }
 
-.footer-social{
+.footer-social {
     margin-right: 15px;
 }
 
-.footer-social:last-child{
+.footer-social:last-child {
     margin-right: 0;
 }
 
-.fb{
+.fb {
     background-image: url("../images/icons/Facebook.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 41px;
 }
 
-.fb:hover{
+.fb:hover {
     background-image: url("../images/icons/Facebook-hover.svg");
     transition: background 0.9s ease;
 }
 
-.tw{
+.tw {
     background-image: url("../images/icons/Twitter.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 41px;
 }
 
-.tw:hover{
+.tw:hover {
     background-image: url("../images/icons/Twitter-hover.svg");
     transition: background 0.9s ease;
 }
 
-.insta{
+.insta {
     background-image: url("../images/icons/IG.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 41px;
 }
 
-.insta:hover{
+.insta:hover {
     background-image: url("../images/icons/IG-hover.svg");
     transition: background 0.9s ease;
 }
 
-.footer-middle{
+.footer-middle {
     border-bottom: 2px solid white;
 }
 
-.footer-down{
+.footer-down {
     padding: 45px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer-down .nav-item{
+.footer-down .nav-item {
     margin-right: 0;
 }
 
-.footer-privacy{
+.footer-privacy {
     color: white;
 }
 

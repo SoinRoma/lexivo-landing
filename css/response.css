@@ -94,6 +94,7 @@
     }
 
     .container-slider-mobile {
+        display: block;
         margin: auto;
         overflow: hidden;
         max-width: 1200px;
