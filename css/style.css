@@ -26,6 +26,16 @@ body{
     text-decoration: none;
 }
 
+.btn-header{
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 90px;
+    padding: 20px 35px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .btn:hover{
     background-color: white;
     color: #004462;
@@ -73,6 +83,7 @@ body{
     list-style: none;
     display: flex;
     color: white;
+    padding: 0;
 }
 
 .nav-item{
@@ -471,6 +482,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-down .nav-item{
+    margin-right: 0;
 }
 
 .footer-privacy{
