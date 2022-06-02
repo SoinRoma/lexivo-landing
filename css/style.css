@@ -232,3 +232,118 @@ body{
     margin-right: 15px;
 }
 
+
+/*----------------CONTACT------------*/
+
+.contact{
+    background-color: #FCFCFA;
+}
+
+.contact-title{
+    padding-top: 130px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 72px;
+    text-transform: uppercase;
+    color: #004462;
+    margin: 0;
+}
+
+.contact-subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #004462;
+}
+
+.contact-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 140px;
+}
+
+#form{
+    max-width: 387px;
+    width: 100%;
+}
+
+.gif{
+    width: 100%;
+    max-width: 732px;
+}
+
+.input-form{
+    height: 67px;
+    max-width: 387px;
+    width: 100%;
+    background: #EDF6F9;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.form-button{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.checkbox {
+    appearance: none;
+    background-color: #fff;
+    margin: 0 15px 0 0;
+    font: inherit;
+    color: currentColor;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #658E9F;
+    border-radius: 5px;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+.checkbox::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    background-color: #658E9F;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.checkbox:checked::before {
+    transform: scale(1);
+}
+
+.privacy{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #658E9F;
+}
+.privacy a{
+    color: #233e49;
+}
+
+.form-btn{
+    border-radius: 90px;
+    padding: 25px 35px;
+    color: white;
+    cursor: pointer;
+    background: #F37D57;
+    border: 1px solid #F37D57;
+    width: 100%;
+    font-size: 18px;
+}
+
