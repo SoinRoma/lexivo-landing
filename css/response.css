@@ -1,0 +1,23 @@
+@media (max-width: 1220px) {
+    .nav, .slider-header, .reviews-block, .contacts-block, .owl-carousel-slider {
+        padding: 0 20px;
+    }
+
+    .demo-block{
+        padding: 155px 20px 150px;
+    }
+
+    .footer-up, .footer-down{
+        padding: 45px 20px;
+    }
+
+    .main-images {
+        justify-content: center;
+        width: 90%;
+    }
+
+    .main-right{
+        display: none;
+    }
+
+}

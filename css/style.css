@@ -285,18 +285,16 @@ body{
 
 #form{
     max-width: 387px;
-    width: 100%;
 }
 
 .gif{
-    width: 100%;
+    width: 58%;
     max-width: 732px;
 }
 
 .input-form{
     height: 67px;
-    max-width: 387px;
-    width: 100%;
+    width: 387px;
     background: #EDF6F9;
     border-radius: 5px;
     border: none;
