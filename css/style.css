@@ -42,6 +42,12 @@ body {
     transition: background-color 1s;
 }
 
+.btn-header:hover {
+    background-color: white;
+    color: #004462;
+    transition: background-color 1s;
+}
+
 .btn:hover path {
     fill: #004462;
 }
@@ -93,6 +99,11 @@ body {
 .nav-link {
     color: white;
     text-decoration: none;
+}
+
+.nav-link:hover{
+    color: #F37D57;
+    transition: color 0.8s;
 }
 
 .menu-button, .menu-close, .nav-menu {
