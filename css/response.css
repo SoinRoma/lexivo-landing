@@ -14,10 +14,61 @@
     .main-images {
         justify-content: center;
         width: 90%;
+        bottom: -188px;
     }
 
     .main-right{
         display: none;
     }
 
+    .slider {
+        margin-top: 30%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .main-title {
+        margin-top: 85px;
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .active-btn {
+        padding: 15px 25px;
+    }
+
+    .btn {
+        padding: 15px 25px;
+    }
+
+    .main-left{
+        width: 93%;
+    }
+
+    .review-title {
+        font-size: 24px;
+    }
+
+    .owl-carousel-review {
+        width: 60%;
+    }
+
+    .contact-title {
+        font-size: 42px;
+    }
+
+    .demo-title {
+        font-size: 42px;
+    }
+
+    .input-form {
+        max-width: 387px;
+        width: 93%;
+    }
+
+    .form-btn {
+        width: 93%;
+    }
 }
