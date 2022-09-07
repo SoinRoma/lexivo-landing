@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,38 +8,53 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="twitter:image:src" content="#">
+    <meta name="twitter:image:src" content="https://lexivo.net/static/images/banner.png">
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="Lexivo">
     <meta name="twitter:title" content="LEXIVO IS THE PERFECT WAY TO STAY CONNECTED">
     <meta name="twitter:description" content="With Lexivo, you can easily call, meet, and message all in one place">
 
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="#"/>
+    <meta property="og:url" content="https://lexivo.net/"/>
     <meta property="og:site_name" content="Lexivo"/>
     <meta property="og:title" content="LEXIVO IS THE PERFECT WAY TO STAY CONNECTED"/>
     <meta property="og:description" content="With Lexivo, you can easily call, meet, and message all in one place"/>
-    <meta property="og:image" content="#"/>
+    <meta property="og:image" content="https://lexivo.net/static/images/banner.png"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="600"/>
 
     <title>LEXIVO - Bring everyone and everything together</title>
-    <link rel="icon" href="images/logos/Favicon.png">
-    <link rel="stylesheet" href="js/carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/response.css">
+    <link rel="icon" href="{% static 'images/logos/Favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'js/carousel/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'js/toastr/toastr.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=4">
+    <link rel="stylesheet" href="{% static 'css/response.css' %}?v=4">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ5CGE9FDG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-HZ5CGE9FDG');
+    </script>
+
+
 </head>
 <body>
 
 <section class="main">
     <header class="container header">
         <nav class="nav">
-            <a href="index.html"><img src="images/logos/Logo.svg" alt="Logo" class="logo"></a>
+            <a href="{% url 'index:index' %}">
+                <img src="{% static 'images/logos/Logo.svg' %}" alt="Logo" class="logo">
+            </a>
             <button class="menu-button">
-                <img src="images/icons/burger.svg" alt="menu" class="menu-button-icon">
+                <img src="{% static 'images/icons/burger.svg' %}" alt="menu" class="menu-button-icon">
             </button>
             <button class="menu-close">
-                <img src="images/icons/close.svg" alt="back" class="menu-close-icon">
+                <img src="{% static 'images/icons/close.svg' %}" alt="back" class="menu-close-icon">
             </button>
             <div class="nav-menu">
                 <ul class="nav-list" id="menu-id">
@@ -47,14 +64,14 @@
                     <li class="nav-item"><a href="#demo" class="nav-link">Demo</a></li>
                 </ul>
                 <div class="footer-socials">
-                    <a href="#" class="footer-social fb"></a>
-                    <a href="#" class="footer-social tw"></a>
-                    <a href="#" class="footer-social insta"></a>
+                    <a href="{{ contact_information.facebook_url }}" class="footer-social fb"></a>
+                    <a href="{{ contact_information.linkedin_url }}" class="footer-social tw"></a>
+                    <a href="{{ contact_information.instagram_url }}" class="footer-social insta"></a>
                 </div>
                 <p class="powered-burger">
                     Powered by:
                     <a target="_blank" href="https://altek.icu/">
-                        <img class="altek" src="images/logos/altek.svg" alt="ALTEK">
+                        <img class="altek" src="{% static 'images/logos/altek.svg' %}" alt="ALTEK">
                     </a>
                 </p>
             </div>
@@ -64,7 +81,7 @@
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 <li class="nav-item"><a href="#demo" class="nav-link">Demo</a></li>
             </ul>
-            <a href="#" class="btn-header">Call us</a>
+            <a href="tel: {{ contact_information.phone_number }}" class="btn-header">Call us</a>
         </nav>
     </header>
     <div class="container">
@@ -76,23 +93,31 @@
                 With Lexivo, you can easily call, meet, and message all in one place
             </p>
             <div class="main-buttons">
-                <a href="#contact" class="active-btn">
-                    See pricing
+                <a href="{{ contact_information.ios_url }}" class="active-btn d-i-block">
+                    <div class="btn-content">
+                        <img src="{% static 'images/icons/AppleLogo.svg' %}" alt="AppleLogo">
+                        <div class="btn-text-right">
+                            <span class="color-gray">Available on the</span>
+                            <span>App Store</span>
+                        </div>
+                    </div>
                 </a>
-                <a href="#" class="btn">
-                    View demo
-                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M-1.96729e-07 4.50059C-2.02525e-07 4.36798 0.0526782 4.2408 0.146446 4.14704C0.240215 4.05327 0.367392 4.00059 0.5 4.00059L12.293 4.00059L9.146 0.854589C9.05211 0.760703 8.99937 0.633364 8.99937 0.500589C8.99937 0.367814 9.05211 0.240475 9.146 0.146589C9.23989 0.0527025 9.36722 -4.23711e-05 9.5 -4.23769e-05C9.63277 -4.23827e-05 9.76011 0.0527025 9.854 0.146589L13.854 4.14659C13.9006 4.19303 13.9375 4.24821 13.9627 4.30896C13.9879 4.3697 14.0009 4.43482 14.0009 4.50059C14.0009 4.56636 13.9879 4.63148 13.9627 4.69222C13.9375 4.75297 13.9006 4.80814 13.854 4.85459L9.854 8.85459C9.76011 8.94848 9.63278 9.00122 9.5 9.00122C9.36722 9.00122 9.23989 8.94848 9.146 8.85459C9.05211 8.7607 8.99937 8.63336 8.99937 8.50059C8.99937 8.36781 9.05211 8.24048 9.146 8.14659L12.293 5.00059L0.5 5.00059C0.367392 5.00059 0.240215 4.94791 0.146446 4.85414C0.0526782 4.76037 -1.90932e-07 4.6332 -1.96729e-07 4.50059Z"
-                              fill="white"/>
-                    </svg>
+                <a href="{{ contact_information.android_url }}" class="active-btn d-i-block">
+                    <div class="btn-content">
+                        <img src="{% static 'images/icons/AndroidLogo.svg' %}" alt="AndroidLogo">
+                        <div class="btn-text-right">
+                            <span class="color-gray">Get in on</span>
+                            <span>Google Play</span>
+                        </div>
+                    </div>
                 </a>
+
             </div>
         </div>
     </div>
     <div class="container main-images">
-        <img src="images/img/desktop/main-left.png" class="main-left" alt="main-left">
-        <img src="images/img/desktop/main-right.png" class="main-right" alt="main-right">
+        <img src="{% static 'images/img/desktop/main-left.png' %}" class="main-left" alt="main-left">
+        <img src="{% static 'images/img/desktop/main-right.png' %}" class="main-right" alt="main-right">
     </div>
 </section>
 
@@ -102,9 +127,11 @@
             <div class="slider-header">
                 <h2 class="slider-title">See how it works</h2>
                 <div class="slider-buttons">
-                    <button class="btn-slider customPrevBtnSlider"><img src="images/icons/Right.svg" alt="Right">
+                    <button class="btn-slider customPrevBtnSlider"><img src="{% static 'images/icons/Right.svg' %}"
+                                                                        alt="Right">
                     </button>
-                    <button class="btn-slider customNextBtnSlider"><img src="images/icons/Right.svg" alt="Right">
+                    <button class="btn-slider customNextBtnSlider"><img src="{% static 'images/icons/Right.svg' %}"
+                                                                        alt="Right">
                     </button>
                 </div>
             </div>
@@ -112,31 +139,31 @@
         <div class="container-slider">
             <div class="owl-carousel owl-carousel-slider">
                 <div class="slide">
-                    <img src="images/slider/desktop/1.png" alt="1">
+                    <img src="{% static 'images/slider/desktop/1.png' %}" alt="1">
                 </div>
                 <div class="slide">
-                    <img src="images/slider/desktop/2.png" alt="2">
+                    <img src="{% static 'images/slider/desktop/2.png' %}" alt="2">
                 </div>
                 <div class="slide">
-                    <img src="images/slider/desktop/3.png" alt="3">
+                    <img src="{% static 'images/slider/desktop/3.png' %}" alt="3">
                 </div>
                 <div class="slide">
-                    <img src="images/slider/desktop/4.png" alt="4">
+                    <img src="{% static 'images/slider/desktop/4.png' %}" alt="4">
                 </div>
             </div>
         </div>
         <div class="container-slider-mobile">
             <div class="slider-mobile-block">
-                <img src="images/slider/mobile/1.png" alt="1">
+                <img src="{% static 'images/slider/mobile/1.png' %}" alt="1">
             </div>
             <div class="slider-mobile-block">
-                <img src="images/slider/mobile/2.png" alt="2">
+                <img src="{% static 'images/slider/mobile/2.png' %}" alt="2">
             </div>
             <div class="slider-mobile-block">
-                <img src="images/slider/mobile/3.png" alt="3">
+                <img src="{% static 'images/slider/mobile/3.png' %}" alt="3">
             </div>
             <div class="slider-mobile-block">
-                <img src="images/slider/mobile/4.png" alt="4">
+                <img src="{% static 'images/slider/mobile/4.png' %}" alt="4">
             </div>
         </div>
     </div>
@@ -145,10 +172,11 @@
 <section class="reviews" id="reviews">
     <div class="container">
         <div class="reviews-block">
-            <button class="btn-slider customPrevBtnReview"><img src="images/icons/Right.svg" alt="Right"></button>
+            <button class="btn-slider customPrevBtnReview"><img src="{% static 'images/icons/Right.svg' %}" alt="Right">
+            </button>
             <div class="owl-carousel-review owl-carousel owl-theme">
                 <div class="slide">
-                    <img src="images/logos/alliance.png" alt="alliance" class="review-img">
+                    <img src="{% static 'images/logos/alliance.png' %}" alt="alliance" class="review-img">
                     <h3 class="review-title">
                         "Getting our scattered phone systems steamlined and centralized was like
                         srtaightening out a giant ball of string"
@@ -158,7 +186,7 @@
                     </p>
                 </div>
                 <div class="slide">
-                    <img src="images/logos/ls.png" alt="ls" class="review-img">
+                    <img src="{% static 'images/logos/ls.png' %}" alt="ls" class="review-img">
                     <h3 class="review-title">
                         "Not only is Lexivo more efficient, it's also more cost-effective. You'll save money on your
                         monthly
@@ -170,7 +198,7 @@
                     </p>
                 </div>
                 <div class="slide">
-                    <img src="images/logos/cnu.png" alt="cnu" class="review-img">
+                    <img src="{% static 'images/logos/cnu.png' %}" alt="cnu" class="review-img">
                     <h3 class="review-title">
                         "If you're looking for a reliable, scalable business communication solution, Lexivo is the
                         perfect
@@ -181,7 +209,7 @@
                     </p>
                 </div>
                 <div class="slide">
-                    <img src="images/logos/ursa.png" alt="ursa" class="review-img">
+                    <img src="{% static 'images/logos/ursa.png' %}" alt="ursa" class="review-img">
                     <h3 class="review-title">
                         "In a rapidly changing world, it's more important than ever to have a platform that can power
                         connections today and transform business tomorrow"
@@ -191,7 +219,7 @@
                     </p>
                 </div>
                 <div class="slide">
-                    <img src="images/logos/penn.png" alt="penn" class="review-img">
+                    <img src="{% static 'images/logos/penn.png' %}" alt="penn" class="review-img">
                     <h3 class="review-title">
                         "We are thrilled to have the opportunity of collaborating with ALTEK and their awesome LEXIVO
                         app!"
@@ -201,7 +229,8 @@
                     </p>
                 </div>
             </div>
-            <button class="btn-slider customNextBtnReview"><img src="images/icons/Right.svg" alt="Right"></button>
+            <button class="btn-slider customNextBtnReview"><img src="{% static 'images/icons/Right.svg' %}" alt="Right">
+            </button>
         </div>
     </div>
 </section>
@@ -212,7 +241,7 @@
             <h3 class="contact-title">Сontact us</h3>
             <p class="contact-subtitle">Give yours contact and our dispatcher will get you in 5 minutes</p>
             <div class="contact-block">
-                <form id="form">
+                <form id="ContactUS">
                     <input type="text" id="company_name" class="input-form"
                            required autocomplete="off" placeholder="Сompany name">
                     <input type="text" id="phone" class="input-form"
@@ -224,9 +253,9 @@
                             <a href="https://altek.icu/privacy" target="_blank">privacy policy</a>
                         </p>
                     </div>
-                    <button class="form-btn" type="submit">Submit</button>
+                    <button class="form-btn" type="submit" id="submitBtn">Submit</button>
                 </form>
-                <img src="images/img/GIF.gif" alt="GIF" class="gif">
+                <img src="{% static 'images/img/GIF.gif' %}" alt="GIF" class="gif">
             </div>
         </div>
     </div>
@@ -244,7 +273,7 @@
                 <a href="#contact" class="active-btn">
                     See pricing
                 </a>
-                <a href="#" class="btn">
+                <a href="https://demo.lexivo.net/" class="btn">
                     View demo
                     <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -260,7 +289,9 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-up">
-            <a href="index.html"><img src="images/logos/Logo.svg" alt="Logo" class="logo"></a>
+            <a href="{% url 'index:index' %}">
+                <img src="{% static 'images/logos/Logo.svg' %}" alt="Logo" class="logo">
+            </a>
             <ul class="nav-list">
                 <li class="nav-item"><a href="#slider" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
@@ -268,9 +299,9 @@
                 <li class="nav-item"><a href="#demo" class="nav-link">Demo</a></li>
             </ul>
             <div class="footer-socials">
-                <a href="#" class="footer-social fb"></a>
-                <a href="#" class="footer-social tw"></a>
-                <a href="#" class="footer-social insta"></a>
+                <a href="{{ contact_information.facebook_url }}" class="footer-social fb"></a>
+                <a href="{{ contact_information.linkedin_url }}" class="footer-social tw"></a>
+                <a href="{{ contact_information.instagram_url }}" class="footer-social insta"></a>
             </div>
         </div>
     </div>
@@ -284,16 +315,75 @@
             <p class="powered">
                 Powered by:
                 <a target="_blank" href="https://altek.icu/">
-                    <img class="altek" src="images/logos/altek.svg" alt="ALTEK">
+                    <img class="altek" src="{% static 'images/logos/altek.svg' %}" alt="ALTEK">
                 </a>
             </p>
         </div>
     </div>
 </footer>
 
-<script src="js/jquery.js"></script>
-<script src="js/carousel/owl.carousel.min.js"></script>
-<script src="js/carousel/main.js"></script>
-<script src="js/main.js"></script>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/toastr/toastr.js' %}"></script>
+<script src="{% static 'js/carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/carousel/main.js' %}"></script>
+<script src="{% static 'js/inputmask/input.mask.js' %}"></script>
+<script src="{% static 'js/main.js' %}?v=4"></script>
+<script>
+
+    $("#phone").inputmask({
+        "mask": "+1 (ddd) ddd-dddd"
+    });
+
+    $("#ContactUS").submit(function (event) {
+        event.preventDefault();
+        let requestData = new FormData();
+        requestData.append('company_name', $('#company_name').val());
+        requestData.append('phone_number', $('#phone').val());
+        requestData.append('agreement', $('#checkbox').val());
+
+        const submitBtn = document.getElementById('submitBtn');
+        submitBtn.disabled = true;
+
+
+        let url = "{% url 'contact_us:create' %}";
+        $.ajax({
+            headers: {"X-CSRFToken": "{{csrf_token}}"},
+            url: url,
+            processData: false,
+            contentType: false,
+            method: 'POST',
+            data: requestData,
+            success: function (data) {
+                toastr.success(
+                    'YOUR REQUEST HAS BEEN\n' +
+                    'SENT SUCCESSFULLY!',
+                    'Success',
+                    {
+                        positionClass: "toast-top-center",
+                        timeOut: 2000,
+                        fadeOut: 1000,
+                    }
+                );
+
+                $('#ContactUS')[0].reset();
+                submitBtn.disabled = false;
+
+            },
+            error: function (data) {
+                toastr.error(
+                    data.responseText,
+                    'Error',
+                    {
+                        positionClass: "toast-top-center",
+                        timeOut: 2000,
+                        fadeOut: 1000,
+                    }
+                );
+                submitBtn.disabled = false;
+            }
+        });
+
+    });
+</script>
 </body>
 </html>

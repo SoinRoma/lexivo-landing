@@ -96,12 +96,16 @@ body {
     margin-right: 15px;
 }
 
+.nav-list .nav-item:last-child {
+    margin-right: 0;
+}
+
 .nav-link {
     color: white;
     text-decoration: none;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #F37D57;
     transition: color 0.8s;
 }
@@ -149,13 +153,35 @@ body {
 .main-images {
     display: flex;
     position: absolute;
-    bottom: -16%;
+    bottom: calc(100vh - 124%);
     right: 0;
     left: 0;
 }
 
 .main-left {
     margin-right: 20px;
+}
+
+.d-i-block{
+    display: inline-block;
+}
+
+.btn-content{
+    display: flex;
+}
+
+.btn-text-right{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-gray {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    color: #D2D2D2;
 }
 
 
@@ -469,14 +495,14 @@ body {
 }
 
 .tw {
-    background-image: url("../images/icons/Twitter.svg");
+    background-image: url("../images/icons/Linkedin.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 41px;
 }
 
 .tw:hover {
-    background-image: url("../images/icons/Twitter-hover.svg");
+    background-image: url("../images/icons/Linkedin-hover.svg");
     transition: background 0.9s ease;
 }
 
